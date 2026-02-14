@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="mr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;600;700&display=swap" rel="stylesheet">
+
+<title>वाढदिवसाच्या शुभेच्छा!</title>
+
+<style>
+body {
+    font-family: 'Noto Sans Devanagari', Arial, sans-serif;
+    background: linear-gradient(135deg, #ffeef9, #f8c8dc, #ffcccb);
+    margin: 0;
+    padding: 20px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.container {
+    max-width: 800px;
+    width: 95%;
+    background: rgba(255,255,255,0.95);
+    border: 5px solid #ffc0cb;
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 10px 30px rgba(255,192,203,0.5);
+}
+
+.media-container {
+    display: flex;
+    justify-content: center;
+    margin: 25px 0;
+}
+
+.photo {
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.reel-video {
+    width: 90%;
+    max-width: 360px;
+    aspect-ratio: 9/16;   /* Instagram Reel Ratio */
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.tap-msg {
+    font-size: 14px;
+    color: #ff1493;
+    margin-top: 10px;
+}
+
+.message {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-top: 30px;
+    background: rgba(255,182,193,0.3);
+    padding: 25px;
+    border-radius: 15px;
+    border-left: 5px solid #ff69b4;
+    white-space: pre-line;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- PHOTO FIRST -->
+    <div class="media-container">
+        <img src="https://img.sanishtech.com/u/91c32378763076f6c54ef444860d0430.jpeg" alt="Mavshi" class="photo">
+    </div>
+
+    <!-- VIDEO SECOND -->
+    <div class="media-container">
+        <video id="birthdayVideo" class="reel-video" autoplay muted loop playsinline>
+            <source src="./VID_20260213_232831_564_bsl.mp4" type="video/mp4">
+            Your browser does not support HTML video.
+        </video>
+    </div>
+
+    <div class="tap-msg">🔊 Tap anywhere to enable sound</div>
+
+    <!-- CARD MESSAGE -->
+    <div class="message">
+🎂✨🎈
+वाढदिवसाच्या Advance हार्दिक शुभेच्छा!
+माझ्या लाडक्या मावशीला वाढदिवसाच्या खुप खुप शुभेच्छा!
+👩‍👧 ✨
+तू केवळ माझी मावशीच नाहीस, तर माझी दुसरी आई आणि उत्तम मैत्रीण सुद्धा आहेस. तुझे प्रेम आणि मार्गदर्शन नेहमीच माझ्या पाठीशी असते, त्याबद्दल मी तुझी खूप ऋणी आहे. येणारे वर्ष तुला उत्तम आरोग्य, सुख-समृद्धी आणि भरभरून आनंद घेऊन येवो, हीच ईश्वरचरणी प्रार्थना. तुझा वाढदिवस अतिशय आनंदाने आणि उत्साहात साजरा होवो!
+
+पुन्हा एकदा तुला वाढदिवसाच्या Advance शुभेच्छा!
+Happy Valentine Day ❤️🫂🌍
+💕🎉🥳
+    </div>
+
+</div>
+
+<script>
+const video = document.getElementById("birthdayVideo");
+
+document.body.addEventListener("click", function () {
+    video.muted = false;
+    video.play();
+});
+</script>
+
+</body>
+</html>
